@@ -4,6 +4,8 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import ArticleList from "./components/ArticleList";
+import IndividualArticle from "./components/IndividualArticle";
+import Topics from "./components/Topics";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/articles" element={<ArticleList />} />
+        <Route path="/articles/:article_id" element={<IndividualArticle />} />
+        <Route path="/topics" element={<Topics />} />
       </Routes>
     </div>
   );
