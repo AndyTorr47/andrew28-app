@@ -24,7 +24,7 @@ const IndividualArticle = () => {
       </h3>
       <p>{body}</p>
       <p>
-        Topic: <Link to={`/articles?topic=${topic}`}>{topic}</Link>
+        Topic: <Link to={`/articles/:topic=${topic}`}>{topic}</Link>
         Votes: {votes} Comments: {comment_count}
       </p>
     </div>
